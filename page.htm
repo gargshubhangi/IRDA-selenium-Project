@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PAN Check</title>
+<h1 style="color:blue;text-align:center;font-family:cursive"> Agent PAN Check </h1>
+<script>
+function setURL(url){
+    document.getElementById('iframe_a').src = url;
+}
+</script>
+</head>
+
+<body background="background.jpg">
+<p style="font-family:verdana;text-align:center">Enter PAN number :
+<input type="text" id="pannumber" name="pan"/>
+<button type="button" id="val" onclick="setURL('http://www.irdaonline.org/PublicAccess/LookUpPAN.aspx')"><font size="3"> Validate</font> </button></p>
+<p align="center"><iframe align="middle" src="demo_iframe.htm" sandbox="allow-forms allow-scripts" id="iframe_a" style="height:700px;width:1000px"></iframe>
+<textarea rows = "20" cols = "100" name = "description" style="border:solid 2px orange;">
+            
+         </textarea></p>
+</body>
+
+
